@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="21" passed="21">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="119207" started-at="2018-02-21T10:14:15Z" finished-at="2018-02-21T10:16:14Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="119207" started-at="2018-02-21T10:14:15Z" finished-at="2018-02-21T10:16:14Z">
+      <class name="letzNavTestScripts.letzNavRegressionTestEditor">
+        <test-method status="PASS" signature="openBrowserAndInstallExtensions()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="openBrowserAndInstallExtensions" is-config="true" duration-ms="37105" started-at="2018-02-21T15:44:15Z" finished-at="2018-02-21T15:44:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndInstallExtensions -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-21T15:44:52Z" finished-at="2018-02-21T15:44:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="editorLogin()[pri:1, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="editorLogin" duration-ms="7225" started-at="2018-02-21T15:44:52Z" finished-at="2018-02-21T15:44:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editorLogin -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="470" started-at="2018-02-21T15:44:59Z" finished-at="2018-02-21T15:45:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editorLogin status=SUCCESS method=letzNavRegressionTestEditor.editorLogin()[pri:1, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-21T15:45:00Z" finished-at="2018-02-21T15:45:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="preValidationTest()[pri:2, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="preValidationTest" duration-ms="2729" started-at="2018-02-21T15:45:00Z" depends-on-methods="letzNavTestScripts.letzNavRegressionTestEditor.editorLogin" finished-at="2018-02-21T15:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preValidationTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="57" started-at="2018-02-21T15:45:03Z" finished-at="2018-02-21T15:45:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=preValidationTest status=SUCCESS method=letzNavRegressionTestEditor.preValidationTest()[pri:2, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-21T15:45:03Z" finished-at="2018-02-21T15:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateValidation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="validateValidation" duration-ms="5817" started-at="2018-02-21T15:45:03Z" data-provider="data" depends-on-methods="letzNavTestScripts.letzNavRegressionTestEditor.preValidationTest" finished-at="2018-02-21T15:45:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//input[@name='portlet_code']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#$%!]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[error 404]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[console.log('testAssertion');]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[cust err 402]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateValidation -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="41" started-at="2018-02-21T15:45:09Z" finished-at="2018-02-21T15:45:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateValidation status=SUCCESS method=letzNavRegressionTestEditor.validateValidation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-21T15:45:09Z" finished-at="2018-02-21T15:45:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateValidation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="validateValidation" duration-ms="3831" started-at="2018-02-21T15:45:09Z" data-provider="data" depends-on-methods="letzNavTestScripts.letzNavRegressionTestEditor.preValidationTest" finished-at="2018-02-21T15:45:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//select[@name='category']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#$%!]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[error 404]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[console.log('testAssertion');]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[cust err 402]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateValidation -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="39" started-at="2018-02-21T15:45:13Z" finished-at="2018-02-21T15:45:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateValidation status=SUCCESS method=letzNavRegressionTestEditor.validateValidation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-21T15:45:13Z" finished-at="2018-02-21T15:45:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateValidation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="validateValidation" duration-ms="3502" started-at="2018-02-21T15:45:13Z" data-provider="data" depends-on-methods="letzNavTestScripts.letzNavRegressionTestEditor.preValidationTest" finished-at="2018-02-21T15:45:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//td/input[@name='portlet_code']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[20]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[#$%!]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[error 404]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[console.log('testAssertion');]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[cust err 402]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateValidation -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="38" started-at="2018-02-21T15:45:16Z" finished-at="2018-02-21T15:45:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateValidation status=SUCCESS method=letzNavRegressionTestEditor.validateValidation(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-21T15:45:16Z" finished-at="2018-02-21T15:45:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="preNavTipSetUp()[pri:4, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="preNavTipSetUp" duration-ms="599" started-at="2018-02-21T15:45:16Z" finished-at="2018-02-21T15:45:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preNavTipSetUp -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="26" started-at="2018-02-21T15:45:17Z" finished-at="2018-02-21T15:45:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=preNavTipSetUp status=SUCCESS method=letzNavRegressionTestEditor.preNavTipSetUp()[pri:4, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-21T15:45:17Z" finished-at="2018-02-21T15:45:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="preNavTipTest()[pri:5, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="preNavTipTest" duration-ms="513" started-at="2018-02-21T15:45:17Z" depends-on-methods="letzNavTestScripts.letzNavRegressionTestEditor.editorLogin" finished-at="2018-02-21T15:45:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preNavTipTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="31" started-at="2018-02-21T15:45:17Z" finished-at="2018-02-21T15:45:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=preNavTipTest status=SUCCESS method=letzNavRegressionTestEditor.preNavTipTest()[pri:5, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-21T15:45:17Z" finished-at="2018-02-21T15:45:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateNavTips(java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="validateNavTips" duration-ms="3122" started-at="2018-02-21T15:45:17Z" data-provider="data" finished-at="2018-02-21T15:45:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//td/input[@name='portlet_title']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ Automation Title]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[  Test Title]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNavTips -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="24" started-at="2018-02-21T15:45:20Z" finished-at="2018-02-21T15:45:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateNavTips status=SUCCESS method=letzNavRegressionTestEditor.validateNavTips(java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="validateNavTips(java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="validateNavTips" duration-ms="2157" started-at="2018-02-21T15:45:20Z" data-provider="data" finished-at="2018-02-21T15:45:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//td/input[@name='portlet_code']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ Automation Code]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[  Test Code]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNavTips -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-21T15:45:20Z" finished-at="2018-02-21T15:45:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="21" started-at="2018-02-21T15:45:23Z" finished-at="2018-02-21T15:45:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateNavTips status=SUCCESS method=letzNavRegressionTestEditor.validateNavTips(java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-21T15:45:23Z" finished-at="2018-02-21T15:45:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateNavTips(java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="validateNavTips" duration-ms="2661" started-at="2018-02-21T15:45:23Z" data-provider="data" finished-at="2018-02-21T15:45:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//select[@name='category']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ Automation Category]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[  Test Category]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNavTips -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="26" started-at="2018-02-21T15:45:25Z" finished-at="2018-02-21T15:45:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateNavTips status=SUCCESS method=letzNavRegressionTestEditor.validateNavTips(java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-21T15:45:25Z" finished-at="2018-02-21T15:45:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="preLauncherSetUp()[pri:7, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="preLauncherSetUp" duration-ms="867" started-at="2018-02-21T15:45:25Z" finished-at="2018-02-21T15:45:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preLauncherSetUp -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="22" started-at="2018-02-21T15:45:26Z" finished-at="2018-02-21T15:45:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=preLauncherSetUp status=SUCCESS method=letzNavRegressionTestEditor.preLauncherSetUp()[pri:7, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-21T15:45:26Z" finished-at="2018-02-21T15:45:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="preLauncherTest()[pri:8, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="preLauncherTest" duration-ms="531" started-at="2018-02-21T15:45:26Z" finished-at="2018-02-21T15:45:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preLauncherTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="25" started-at="2018-02-21T15:45:27Z" finished-at="2018-02-21T15:45:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=preLauncherTest status=SUCCESS method=letzNavRegressionTestEditor.preLauncherTest()[pri:8, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-21T15:45:27Z" finished-at="2018-02-21T15:45:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateLaunchers(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="validateLaunchers" duration-ms="3403" started-at="2018-02-21T15:45:27Z" data-provider="data" depends-on-methods="letzNavTestScripts.letzNavRegressionTestEditor.preLauncherTest" finished-at="2018-02-21T15:45:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//td/input[@name='portlet_title']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[link]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ PortletTitle]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NameTitle]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://timesofindia.indiatimes.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLaunchers -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="27" started-at="2018-02-21T15:45:30Z" finished-at="2018-02-21T15:45:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateLaunchers status=SUCCESS method=letzNavRegressionTestEditor.validateLaunchers(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-21T15:45:30Z" finished-at="2018-02-21T15:45:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateLaunchers(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="validateLaunchers" duration-ms="2795" started-at="2018-02-21T15:45:30Z" data-provider="data" depends-on-methods="letzNavTestScripts.letzNavRegressionTestEditor.preLauncherTest" finished-at="2018-02-21T15:45:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//td/input[@name='portlet_code']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[link]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ PortletCode]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NameCode]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://timesofindia.indiatimes.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLaunchers -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="30" started-at="2018-02-21T15:45:33Z" finished-at="2018-02-21T15:45:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateLaunchers status=SUCCESS method=letzNavRegressionTestEditor.validateLaunchers(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-21T15:45:33Z" finished-at="2018-02-21T15:45:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateLaunchers(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="validateLaunchers" duration-ms="2615" started-at="2018-02-21T15:45:33Z" data-provider="data" depends-on-methods="letzNavTestScripts.letzNavRegressionTestEditor.preLauncherTest" finished-at="2018-02-21T15:45:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//input[@name='portlet_description']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[link]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ PortletCategory]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NameCategory]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[https://timesofindia.indiatimes.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLaunchers -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="30" started-at="2018-02-21T15:45:36Z" finished-at="2018-02-21T15:45:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateLaunchers status=SUCCESS method=letzNavRegressionTestEditor.validateLaunchers(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-21T15:45:36Z" finished-at="2018-02-21T15:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="preWorkFlowSetUp()[pri:10, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="preWorkFlowSetUp" duration-ms="830" started-at="2018-02-21T15:45:36Z" finished-at="2018-02-21T15:45:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preWorkFlowSetUp -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="38" started-at="2018-02-21T15:45:36Z" finished-at="2018-02-21T15:45:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=preWorkFlowSetUp status=SUCCESS method=letzNavRegressionTestEditor.preWorkFlowSetUp()[pri:10, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-21T15:45:37Z" finished-at="2018-02-21T15:45:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="preWorkFlowTest()[pri:11, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="preWorkFlowTest" duration-ms="3520" started-at="2018-02-21T15:45:37Z" depends-on-methods="letzNavTestScripts.letzNavRegressionTestEditor.editorLogin" finished-at="2018-02-21T15:45:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preWorkFlowTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="30" started-at="2018-02-21T15:45:40Z" finished-at="2018-02-21T15:45:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=preWorkFlowTest status=SUCCESS method=letzNavRegressionTestEditor.preWorkFlowTest()[pri:11, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-02-21T15:45:40Z" finished-at="2018-02-21T15:45:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="validateWorkFlows(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:12, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="validateWorkFlows" duration-ms="10418" started-at="2018-02-21T15:45:40Z" data-provider="data" finished-at="2018-02-21T15:45:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//input[@name='portlet_code']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Automation]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[clickOnElement]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[cornerBottomRight]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateWorkFlows -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="26" started-at="2018-02-21T15:45:51Z" finished-at="2018-02-21T15:45:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateWorkFlows status=SUCCESS method=letzNavRegressionTestEditor.validateWorkFlows(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:12, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="validateWorkFlows(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:12, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="validateWorkFlows" duration-ms="10924" started-at="2018-02-21T15:45:51Z" data-provider="data" finished-at="2018-02-21T15:46:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//td/input[@name='portlet_title']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Automation]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[clickOnElement]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[cornerBottomRight]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateWorkFlows -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-21T15:45:51Z" finished-at="2018-02-21T15:45:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="51" started-at="2018-02-21T15:46:01Z" finished-at="2018-02-21T15:46:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateWorkFlows status=SUCCESS method=letzNavRegressionTestEditor.validateWorkFlows(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:12, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="validateWorkFlows(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:12, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="validateWorkFlows" duration-ms="10395" started-at="2018-02-21T15:46:02Z" data-provider="data" finished-at="2018-02-21T15:46:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//h1[@class='ppm_workspace_title']]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Automation]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[clickOnElement]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[cornerBottomRight]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateWorkFlows -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-21T15:46:02Z" finished-at="2018-02-21T15:46:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="42" started-at="2018-02-21T15:46:12Z" finished-at="2018-02-21T15:46:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateWorkFlows status=SUCCESS method=letzNavRegressionTestEditor.validateWorkFlows(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:12, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="postWorkFlowCreation()[pri:13, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="postWorkFlowCreation" duration-ms="666" started-at="2018-02-21T15:46:12Z" finished-at="2018-02-21T15:46:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postWorkFlowCreation -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-02-21T15:46:12Z" finished-at="2018-02-21T15:46:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="tearDown" is-config="true" duration-ms="28" started-at="2018-02-21T15:46:13Z" finished-at="2018-02-21T15:46:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=postWorkFlowCreation status=SUCCESS method=letzNavRegressionTestEditor.postWorkFlowCreation()[pri:13, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:letzNavTestScripts.letzNavRegressionTestEditor@32cf48b7]" name="afterClass" is-config="true" duration-ms="1679" started-at="2018-02-21T15:46:13Z" finished-at="2018-02-21T15:46:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- letzNavTestScripts.letzNavRegressionTestEditor -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
