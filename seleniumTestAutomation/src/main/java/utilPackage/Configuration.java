@@ -1,4 +1,4 @@
-package letzNavTestFrameWork.letzNavConfiguration;
+package utilPackage;
 
 import org.openqa.selenium.WebDriver;
 
@@ -6,19 +6,19 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
 import letzNavApplicationsToTest.clarityPPM;
-import letzNavTestFrameWork.letzNavComponents.letzNavPlayer;
+import productComponents.letzNavPlayer;
 
-public class letzNavConfiguration {
+public class Configuration {
 	WebDriver driver;
 	ExtentReports report;
 	ExtentTest test;
 	letzNavPlayer player;
 	clarityPPM clarity;
-	letzNavExcelReader data;
+	ExcelReader data;
 	String component="player";
-	letzNavInstaller installer;
+	ExtensionInstaller installer;
 	
-	public void letzNavConfig(WebDriver driver,ExtentReports report,ExtentTest test,letzNavPlayer player,letzNavExcelReader data ) {
+	public void letzNavConfig(WebDriver driver,ExtentReports report,ExtentTest test,letzNavPlayer player,ExcelReader data ) {
 		
 	}
 	

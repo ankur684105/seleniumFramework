@@ -1,4 +1,4 @@
-package letzNavTestFrameWork.letzNavConfiguration;
+package utilPackage;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-public class letzNavBrowser {
+public class Browser {
 
 	static WebDriver driver;
 	//static String chromeDriverpath = letzNavPropertiesReader.getValue("chromedriver");

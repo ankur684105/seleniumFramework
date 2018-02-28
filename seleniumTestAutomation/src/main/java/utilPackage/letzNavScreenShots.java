@@ -1,4 +1,4 @@
-package letzNavTestFrameWork.letzNavConfiguration;
+package utilPackage;
 
 import java.io.File;
 import java.io.IOException;

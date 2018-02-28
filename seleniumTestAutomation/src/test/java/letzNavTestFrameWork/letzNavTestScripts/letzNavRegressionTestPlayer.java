@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
-import letzNavTestFrameWork.letzNavComponents.*;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -30,46 +30,44 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import letzNavApplicationsToTest.*;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavBrowser;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavCsvData;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavExcelReader;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavExtentReports;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavInstaller;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavPropertiesReader;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavScreenShots;
-import letzNavTestFrameWork.letzNavComponents.*;
-import letzNavTestFrameWork.letzNavComponents.letzNavPlayer;
+import productComponents.*;
+import utilPackage.Browser;
+import utilPackage.CsvDataReader;
+import utilPackage.ExcelReader;
+import utilPackage.ExtensionInstaller;
+import utilPackage.PropertiesReader;
+import utilPackage.letzNavScreenShots;
 
 @SuppressWarnings("unused")
 public class letzNavRegressionTestPlayer {
 	Logger logs;
 	public WebDriver driver;
 
-	public String baseURL = letzNavPropertiesReader.getValue("url");
-	public String clarityid = letzNavPropertiesReader.getValue("clarityid");
-	public String claritypwd = letzNavPropertiesReader.getValue("claritypwd");
+	public String baseURL = PropertiesReader.getValue("url");
+	public String clarityid = PropertiesReader.getValue("clarityid");
+	public String claritypwd = PropertiesReader.getValue("claritypwd");
 	ExtentReports report;
 	ExtentTest test;
 	letzNavPlayer player;
 	clarityPPM clarity;
-	letzNavExcelReader data;
+	ExcelReader data;
 	String component = "player";
-	letzNavInstaller installer;
+	ExtensionInstaller installer;
 	String msg;
 
 	// This meathod initializes browser and installs extentions to browser
 	@BeforeClass
 	public void openBrowserAndInstallExtensions() throws Exception {
-		installer = new letzNavInstaller();
+		installer = new ExtensionInstaller();
 		installer.downloadExtension("player");
 		logs = Logger.getLogger("devpinoyLogger");
-		report = letzNavExtentReports.getInstance();
-		driver = letzNavBrowser.startBrowser("chrome", letzNavPropertiesReader.getValue("url"), component);
+		report = ExtentReports.getInstance();
+		driver = Browser.startBrowser("chrome", PropertiesReader.getValue("url"), component);
 		//player = new letzNavPlayer(driver);
 		player = new letzNavPlayer(driver);
 		clarity = new clarityPPM(driver);
 		String testDataFile = System.getProperty("user.dir") + "\\TestData\\Book1.xlsx";
-		letzNavExcelReader.setExcelFile(testDataFile, "EmployeeData");
+		ExcelReader.setExcelFile(testDataFile, "EmployeeData");
 	}
 	
 	// Data driven
@@ -77,13 +75,13 @@ public class letzNavRegressionTestPlayer {
 	public Object[][] getData(Method method) {
 		Object[][] testData = null;
 		if (method.getName().equals("validateLauncherPosition")) {
-			testData = letzNavExcelReader.getTestData("validateLauncherPosition");
+			testData = ExcelReader.getTestData("validateLauncherPosition");
 			return testData;
 		} else if (method.getName().equals("validateFlow")) {
-			testData = letzNavExcelReader.getTestData("validateFlow");
+			testData = ExcelReader.getTestData("validateFlow");
 			return testData;
 		} else if(method.getName().equals("validateEditorFormPage")) {
-			testData = letzNavExcelReader.getTestData("validateEditorFormPage");
+			testData = ExcelReader.getTestData("validateEditorFormPage");
 			return testData;
 		}
 		

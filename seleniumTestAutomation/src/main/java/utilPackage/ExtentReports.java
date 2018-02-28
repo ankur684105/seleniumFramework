@@ -1,4 +1,4 @@
-package letzNavTestFrameWork.letzNavConfiguration;
+package utilPackage;
 
 import java.io.File;
 import java.util.Date;
@@ -6,7 +6,7 @@ import java.util.Date;
 import com.relevantcodes.extentreports.DisplayOrder;
 import com.relevantcodes.extentreports.ExtentReports;
 
-public class letzNavExtentReports {
+public class ExtentReports {
 
 	public static ExtentReports getInstance() {
 

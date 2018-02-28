@@ -1,4 +1,4 @@
-package letzNavTestFrameWork.letzNavConfiguration;
+package utilPackage;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -9,14 +9,14 @@ import java.nio.channels.ReadableByteChannel;
 
 import org.apache.commons.io.FileUtils;
 
-public class letzNavInstaller extends letzNavPropertiesReader {
+public class ExtensionInstaller extends PropertiesReader {
 
 	public String file = System.getProperty("user.dir") + "//ExtensionResouces//CRX";
 	public String directory = System.getProperty("user.dir") + "//ExtensionResouces//";
 	File extensionResources = new File(directory);
 	public String filePlayer = System.getProperty("user.dir") + "//ExtensionResouces//letznav_player.crx";
-	public String editorUrl = letzNavPropertiesReader.getValue("editorurl");
-	public String playerUrl = letzNavPropertiesReader.getValue("playerurl");
+	public String editorUrl = PropertiesReader.getValue("editorurl");
+	public String playerUrl = PropertiesReader.getValue("playerurl");
 	public String downloadUrl;
 	public String filePath;
 

@@ -1,4 +1,4 @@
-package letzNavTestFrameWork.letzNavComponents;
+package productComponents;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;

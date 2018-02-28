@@ -1,4 +1,4 @@
-package letzNavTestFrameWork.letzNavConfiguration;
+package utilPackage;
 
 import java.io.FileInputStream;
 
@@ -9,7 +9,7 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class letzNavExcelReader {
+public class ExcelReader {
 	private static XSSFWorkbook ExcelWBook;
 	private static XSSFSheet ExcelWSheet;
 

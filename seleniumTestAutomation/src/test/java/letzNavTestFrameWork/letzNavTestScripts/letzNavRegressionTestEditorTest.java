@@ -23,47 +23,46 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import letzNavApplicationsToTest.clarityPPM;
-import letzNavTestFrameWork.letzNavComponents.letzNavEditor;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavBrowser;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavExcelReader;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavExtentReports;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavInstaller;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavPropertiesReader;
-import letzNavTestFrameWork.letzNavConfiguration.letzNavScreenShots;
+import productComponents.letzNavEditor;
+import utilPackage.Browser;
+import utilPackage.ExcelReader;
+import utilPackage.ExtensionInstaller;
+import utilPackage.PropertiesReader;
+import utilPackage.letzNavScreenShots;
 
 
 public class letzNavRegressionTestEditorTest {
 	Logger logs;
 	public WebDriver driver;
 
-	public String baseURL = letzNavPropertiesReader.getValue("url");
-	public String clarityid = letzNavPropertiesReader.getValue("clarityid");
-	public String claritypwd = letzNavPropertiesReader.getValue("claritypwd");
-	public String editorId = letzNavPropertiesReader.getValue("editorid");
-	public String editorPwd = letzNavPropertiesReader.getValue("editorpassword");
+	public String baseURL = PropertiesReader.getValue("url");
+	public String clarityid = PropertiesReader.getValue("clarityid");
+	public String claritypwd = PropertiesReader.getValue("claritypwd");
+	public String editorId = PropertiesReader.getValue("editorid");
+	public String editorPwd = PropertiesReader.getValue("editorpassword");
 	ExtentReports report;
 	ExtentTest test;
 	letzNavEditor editor;
 	clarityPPM clarity;
-	letzNavExcelReader data;
+	ExcelReader data;
 	String component = "editor";
-	letzNavInstaller installer;
+	ExtensionInstaller installer;
 	String msg;
 
 	// This meathod initializes browser and installs extentions to browser
 	@BeforeClass
 	public void openBrowserAndInstallExtensions() throws Exception {
-		installer = new letzNavInstaller();
+		installer = new ExtensionInstaller();
 		installer.downloadExtension("editor");
 		logs = Logger.getLogger("devpinoyLogger");
-		report = letzNavExtentReports.getInstance();
-		driver = letzNavBrowser.startBrowser("chrome", letzNavPropertiesReader.getValue("url"), component);
+		report = ExtentReports.getInstance();
+		driver = Browser.startBrowser("chrome", PropertiesReader.getValue("url"), component);
 		// player = new letzNavPlayer(driver);
 		editor = new letzNavEditor(driver);
 		clarity = new clarityPPM(driver);
 		String testDataFile = System.getProperty("user.dir") + "\\TestData\\Book1.xlsx";
 		//String testDataFile = letzNavPropertiesReader.getValue("testdata");
-		letzNavExcelReader.setExcelFile(testDataFile, "EmployeeData");
+		ExcelReader.setExcelFile(testDataFile, "EmployeeData");
 	}
 
 	// Data driven validateWorkFlows
@@ -71,19 +70,19 @@ public class letzNavRegressionTestEditorTest {
 	public Object[][] getData(Method method) {
 		Object[][] testData = null;
 		if (method.getName().equals("validateLaunchers")) {
-			testData = letzNavExcelReader.getTestData("validateLaunchers");
+			testData = ExcelReader.getTestData("validateLaunchers");
 			return testData;
 		} else if (method.getName().equals("validateEditorFormPage")) {
-			testData = letzNavExcelReader.getTestData("validateEditorFormPage");
+			testData = ExcelReader.getTestData("validateEditorFormPage");
 			return testData;
 		} else if (method.getName().equals("validateValidation")) {
-			testData = letzNavExcelReader.getTestData("validateValidation");
+			testData = ExcelReader.getTestData("validateValidation");
 			return testData;
 		} else if (method.getName().equals("validateNavTips")) {
-			testData = letzNavExcelReader.getTestData("validateNavTips");
+			testData = ExcelReader.getTestData("validateNavTips");
 			return testData;
 		} else if (method.getName().equals("validateWorkFlows")) {
-			testData = letzNavExcelReader.getTestData("validateWorkFlows");
+			testData = ExcelReader.getTestData("validateWorkFlows");
 			return testData;
 		}
 

@@ -1,4 +1,4 @@
-package letzNavTestFrameWork.letzNavConfiguration;
+package utilPackage;
 
 import java.io.BufferedReader;
 
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 import java.util.List;
 
-public class letzNavCsvData {
+public class CsvDataReader {
 
 	public static Object[][] readData(String fileName) throws IOException {
 		// String fileName = "myfile.csv";

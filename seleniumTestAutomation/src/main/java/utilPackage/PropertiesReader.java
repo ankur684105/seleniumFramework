@@ -1,4 +1,4 @@
-package letzNavTestFrameWork.letzNavConfiguration;
+package utilPackage;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-public class letzNavPropertiesReader {
+public class PropertiesReader {
 
 	public static String getValue(String desiredValue) {
 		InputStream is = null;
