@@ -13,10 +13,10 @@ import org.testng.Assert;
 public class Editor {
 
 	public WebDriver driver;
-	String letzNavEditorButton = "//banner[@class='banner-editor']";
+	String productEditorButton = "//banner[@class='banner-editor']";
 	String editorLogOutButton = "//bottom-bar/div/span[@class='mdi mdi-logout']";
-	String editorLogin = "//input[@name='letznav-username']";
-	String editorPassword = "//input[@name='letznav-password']";
+	String editorLogin = "//input[@name='product-username']";
+	String editorPassword = "//input[@name='product-password']";
 	String editorLoginButton = "//button[@class='button-save mat-button']/span[text()='Login']";
 	String editorWorkFlowsButton = "//li[@class='home-navigation__workflows']/a[text()='Workflows']";
 	String editorCreateNewFlowFormButton = "a[class=top-bar__container__newbtn]";
@@ -35,9 +35,9 @@ public class Editor {
 	String launcherLink = "//md-button-toggle[3]";
 	String launcherUrl = "//div/input[@name='urlString']";
 	String launcherSave = "//div[@class='editor-validation active']/div/button[@class='button-save']";
-	String BackButton = "//span[@class='letznav-panel-btn back']";
+	String BackButton = "//span[@class='product-panel-btn back']";
 	String editorValidations = "//li[@class='home-navigation__validations']/a";
-	String hamburgerMenu = "//span[@class='mdi mdi-dots-vertical letznav-panel-btn menu']";
+	String hamburgerMenu = "//span[@class='mdi mdi-dots-vertical product-panel-btn menu']";
 	String settingsButton = "//button[@class='button-save mat-menu-item']";
 	String status = "//input[@id='md-slide-toggle-1-input']";
 	String published = "//input[@id='md-slide-toggle-2-input']";
@@ -100,24 +100,24 @@ public class Editor {
 	}
 
 	// Click on Launcher button
-	public void letzNavEditorClickLauncher() {
+	public void productEditorClickLauncher() {
 		driver.findElement(By.xpath(editorLaunchers)).click();
 	}
 
-	public void letzNavEditorClickNavTip() {
+	public void productEditorClickNavTip() {
 		driver.findElement(By.xpath(editorNavTip)).click();
 	}
 
-	public void letzNavEditorClickValidations() {
+	public void productEditorClickValidations() {
 		driver.findElement(By.xpath(editorValidations)).click();
 	}
 
-	public void letzNavEditorClickWorkFlows() {
+	public void productEditorClickWorkFlows() {
 		driver.findElement(By.xpath(editorWorkFlowsButton)).click();
 	}
 
 	// Click on Create New FormPage and keyIn name
-	public void letzNavCreateNewForm(String formName) {
+	public void productCreateNewForm(String formName) {
 		try {
 		Assert.assertTrue(driver.findElement(By.xpath(createNewFormText)).isDisplayed());
 		
@@ -130,22 +130,22 @@ public class Editor {
 	}
 
 	// Click on element picker and select element from applicationToTest
-	public void letzNavClickPicker(String editorElementPicker) {
+	public void productClickPicker(String editorElementPicker) {
 		driver.findElement(By.xpath(editorElementPicker)).click();
 
 	}
 
-	public void letzNavClickPicker() {
+	public void productClickPicker() {
 		driver.findElement(By.xpath("//div[@class='anchors__container']/ul/element-picker/a")).click();
 	}
 
-	public void letzNavSelectElementId(String xpathOfElement) {
+	public void productSelectElementId(String xpathOfElement) {
 		driver.findElement(By.xpath(xpathOfElement)).click();
 
 	}
 
 	// Validate strength identification
-	public boolean letzNavValidateIdentificationStrenght() {
+	public boolean productValidateIdentificationStrenght() {
 		try {
 		boolean result = false;
 		String strength = driver.findElement(By.xpath(editorAnchorStrenght)).getText();
@@ -159,7 +159,7 @@ public class Editor {
 		}
 	}
 
-	public void letzNavSaveForm() {
+	public void productSaveForm() {
 		driver.findElement(By.xpath(editorSaveFormButton)).click();
 	}
 
@@ -182,13 +182,13 @@ public class Editor {
 	public void clickOnComponent(String tool) {
 		try {
 		if (tool.equalsIgnoreCase("launchers")) {
-			letzNavEditorClickLauncher();
+			productEditorClickLauncher();
 		} else if (tool.equalsIgnoreCase("workflows")) {
-			letzNavEditorClickWorkFlows();
+			productEditorClickWorkFlows();
 		} else if (tool.equalsIgnoreCase("navtips")) {
-			letzNavEditorClickNavTip();
+			productEditorClickNavTip();
 		} else if (tool.equalsIgnoreCase("validations")) {
-			letzNavEditorClickValidations();
+			productEditorClickValidations();
 		}
 		}
 		catch(Exception e) {
@@ -203,24 +203,24 @@ public class Editor {
 				
 	}
 
-	public void letzNavLoginToTool(String id, String pwd) {
-		letzNavEditorLogin(id, pwd);
+	public void productLoginToTool(String id, String pwd) {
+		productEditorLogin(id, pwd);
 		}
 
 	// Function to create new form page on any tool page
-	public void letzNavCreateNewForm(String id, String pwd, String tool, String formName) {
+	public void productCreateNewForm(String id, String pwd, String tool, String formName) {
 		try {
-		letzNavLoginToTool(id, pwd);
+		productLoginToTool(id, pwd);
 		clickOnComponent(tool);
-		letzNavCreateNewFlow();
-		letzNavCreateNewForm(formName);
+		productCreateNewFlow();
+		productCreateNewForm(formName);
 		}
 		catch(Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	public void letzNavCreateLauncher(String elementXpath, String launcherOption, String launcherTxt,
+	public void productCreateLauncher(String elementXpath, String launcherOption, String launcherTxt,
 			String launcherTitle, String linkUrl) {
 		Assert.assertTrue(driver
 				.findElement(By.xpath(
@@ -249,7 +249,7 @@ public class Editor {
 
 	}
 	
-	public void letzNavCreateNavtip(String elementXpath, String navTipText, String navTipName) {
+	public void productCreateNavtip(String elementXpath, String navTipText, String navTipName) {
 		//String navTxt = "//badge/div[1]/navtip/div/div/div/p";
 		Assert.assertTrue(driver
 				.findElement(By.xpath(
@@ -266,7 +266,7 @@ public class Editor {
 		driver.findElement(By.xpath(BackButton)).click();
 	}
 
-	public void letzNavRequiredFieldValidation() {
+	public void productRequiredFieldValidation() {
 		driver.findElement(By.xpath(validationButton)).click();
 		executor = (JavascriptExecutor) driver;
 		String js = "a=$('[class=\\\"mat-menu-item\\\"]')[0];";
@@ -275,7 +275,7 @@ public class Editor {
 
 	}
 
-	public void letzNavLengthConstraint(String min, String max) {
+	public void productLengthConstraint(String min, String max) {
 		driver.findElement(By.xpath(validationButton)).click();
 		executor = (JavascriptExecutor) driver;
 		String js = "a=$('[class=\\\"mat-menu-item\\\"]')[1];";
@@ -286,7 +286,7 @@ public class Editor {
 		driver.findElement(By.xpath(afterClickLenConstHeader)).click();
 	}
 
-	public void letzNavRegularExpression(String expressionvalue, String errorMsg) {
+	public void productRegularExpression(String expressionvalue, String errorMsg) {
 		driver.findElement(By.xpath(validationButton)).click();
 		executor = (JavascriptExecutor) driver;
 		String js = "a=$('[class=\\\"mat-menu-item\\\"]')[2];";
@@ -297,7 +297,7 @@ public class Editor {
 		driver.findElement(By.xpath(afterClickRegExpHeader)).click();
 	}
 
-	public void letzNavCustomValidation(String customVal, String errMsg) {
+	public void productCustomValidation(String customVal, String errMsg) {
 		driver.findElement(By.xpath(validationButton)).click();
 		executor = (JavascriptExecutor) driver;
 		String js = "a=$('[class=\\\"mat-menu-item\\\"]')[3];";
@@ -308,15 +308,15 @@ public class Editor {
 		driver.findElement(By.xpath(afterClickCustValHeader)).click();
 
 	}
-	public void letzNavBeforeCreateVal() {
+	public void productBeforeCreateVal() {
 		driver.findElement(By.xpath("//element-picker/a/span[contains(text(),'Cancel')]")).click();
 		driver.findElement(By.xpath("//element-picker/a/span[contains(text(),' Select Spotlight')]")).click();
 	}
-	public void letzNavAfterSaveValidationButton() {
-		driver.findElement(By.xpath("//span[@class='letznav-panel-btn back']/span")).click();
+	public void productAfterSaveValidationButton() {
+		driver.findElement(By.xpath("//span[@class='product-panel-btn back']/span")).click();
 	}
 
-	public void letzNavCreateValidation(String elementXpath, String min, String max, String regExp, String reMsg,
+	public void productCreateValidation(String elementXpath, String min, String max, String regExp, String reMsg,
 			String custAssr, String caMsg) {
 		try {
 			Assert.assertTrue(driver
@@ -325,14 +325,14 @@ public class Editor {
 					.isDisplayed());
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			driver.findElement(By.xpath(editorNewValidation)).click();
-			letzNavBeforeCreateVal();
+			productBeforeCreateVal();
 			driver.findElement(By.xpath(elementXpath)).click();
-			letzNavRequiredFieldValidation();
-			letzNavLengthConstraint(min, max);
-			letzNavRegularExpression(regExp, reMsg);
-			letzNavCustomValidation(custAssr, caMsg);
+			productRequiredFieldValidation();
+			productLengthConstraint(min, max);
+			productRegularExpression(regExp, reMsg);
+			productCustomValidation(custAssr, caMsg);
 			driver.findElement(By.xpath(validationSave)).click();
-			letzNavAfterSaveValidationButton();
+			productAfterSaveValidationButton();
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -340,10 +340,10 @@ public class Editor {
 
 	}
 
-	// login to letzNavEditor
-	public void letzNavEditorLogin(String loginId, String password) {
+	// login to productEditor
+	public void productEditorLogin(String loginId, String password) {
 		try {
-		driver.findElement(By.xpath(letzNavEditorButton)).click();
+		driver.findElement(By.xpath(productEditorButton)).click();
 		driver.findElement(By.xpath(editorLogin)).sendKeys(loginId);
 		driver.findElement(By.xpath(editorPassword)).sendKeys(password);
 		driver.findElement(By.xpath(editorLoginButton)).click();
@@ -354,13 +354,13 @@ public class Editor {
 
 	}
 
-	// logout from letzNav Editor
-	public void letzNavEditorLogOut() {
+	// logout from product Editor
+	public void productEditorLogOut() {
 		driver.findElement(By.xpath(editorLogOutButton)).click();
 	}
 
 	// select workflow to play in
-	public void letzNavSelectFlowToPlay(String flowName) {
+	public void productSelectFlowToPlay(String flowName) {
 		List<WebElement> options = driver.findElements(By.xpath(editorWorkFlowList));
 		for (WebElement select : options) {
 			if (select.getText().equals(flowName)) {
@@ -370,7 +370,7 @@ public class Editor {
 		}
 	}
 
-	public void letzNavSelectBalloonPosition(String position) {
+	public void productSelectBalloonPosition(String position) {
 		
 		if (position.equalsIgnoreCase("cornerLeftTop")) {
 			driver.findElement(By.xpath(cornerLeftTop)).click();
@@ -402,7 +402,7 @@ public class Editor {
 
 	}
 
-	public void letzNavSelectAdvanceOn(String advanceOn) {
+	public void productSelectAdvanceOn(String advanceOn) {
 		
 		if (advanceOn.equalsIgnoreCase("nextButton")) {
 			driver.findElement(By.xpath(nextButton)).click();
@@ -418,15 +418,15 @@ public class Editor {
 		
 	}
 
-	public void letzNavWorkflowStepDescription(String desc) {
+	public void productWorkflowStepDescription(String desc) {
 		driver.findElement(By.xpath(stepDescription)).sendKeys(desc);
 	}
 
-	public void letzNavWorkFlowClickNextStep() {
+	public void productWorkFlowClickNextStep() {
 		driver.findElement(By.xpath(workflowNextStep)).click();
 	}
 
-	public void letzNavWorkFlowClickDoneButton() {
+	public void productWorkFlowClickDoneButton() {
 		driver.findElement(By.xpath(workflowDoneButton)).click();
 	}
 
@@ -444,7 +444,7 @@ public class Editor {
 		boolean result = Boolean.parseBoolean(r);
 		if (result == true) {
 			driver.findElement(By.xpath(markEntryPoint)).click();
-			letzNavClickPicker();
+			productClickPicker();
 			if (driver.findElement(By.xpath("//div/p[text()='Select atleast one anchor for the milestone step']"))
 					.isDisplayed() == true)
 				driver.findElement(By.xpath(xPath)).click();
@@ -455,24 +455,24 @@ public class Editor {
 		}
 	}
 
-	public void letzNavWorkFlowDetails(String name, String desc) {
+	public void productWorkFlowDetails(String name, String desc) {
 		driver.findElement(By.xpath(workFlowName)).sendKeys(name);
 		driver.findElement(By.xpath(workFlowDescription)).sendKeys(desc);
 	}
 
-	public void letzNavCreateNewFlow() {
+	public void productCreateNewFlow() {
 		driver.findElement(By.cssSelector(editorCreateNewFlowFormButton)).click();
 	}
 
-	public void letzNavSaveFormDesc() {
+	public void productSaveFormDesc() {
 		driver.findElement(By.xpath("//button[@class='button-save mat-button']")).click();
 	}
 
 	public void createNewWorkFlow(String name, String desc) {
 		try {
-		letzNavCreateNewFlow();
-		letzNavWorkFlowDetails(name, desc);
-		letzNavSaveFormDesc();
+		productCreateNewFlow();
+		productWorkFlowDetails(name, desc);
+		productSaveFormDesc();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//element-picker/a/span[contains(text(),'Cancel')]")).click();
 		}
@@ -486,11 +486,11 @@ public class Editor {
 		driver.findElement(By.xpath("//element-picker/a/span[contains(text(),'Select Element')]")).click();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.xpath(xpath)).click();
-		letzNavWorkflowStepDescription(desc);
-		letzNavSelectAdvanceOn(advanceOn);
-		letzNavSelectBalloonPosition(position);
+		productWorkflowStepDescription(desc);
+		productSelectAdvanceOn(advanceOn);
+		productSelectBalloonPosition(position);
 		workflowMarkEntryPoint(entryPt, xpath);
-		letzNavWorkFlowClickNextStep();
+		productWorkFlowClickNextStep();
 		}
 		catch(Exception e) {
 		e.printStackTrace();	
