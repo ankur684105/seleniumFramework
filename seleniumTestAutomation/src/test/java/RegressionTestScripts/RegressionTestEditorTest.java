@@ -31,7 +31,7 @@ import utilPackage.PropertiesReader;
 import utilPackage.letzNavScreenShots;
 
 
-public class letzNavRegressionTestEditorTest {
+public class RegressionTestEditorTest {
 	Logger logs;
 	public WebDriver driver;
 

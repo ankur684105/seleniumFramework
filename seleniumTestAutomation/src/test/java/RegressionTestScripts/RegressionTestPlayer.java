@@ -39,7 +39,7 @@ import utilPackage.PropertiesReader;
 import utilPackage.letzNavScreenShots;
 
 @SuppressWarnings("unused")
-public class letzNavRegressionTestPlayer {
+public class RegressionTestPlayer {
 	Logger logs;
 	public WebDriver driver;
 
