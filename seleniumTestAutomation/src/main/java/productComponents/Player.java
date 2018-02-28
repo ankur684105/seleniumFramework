@@ -14,11 +14,11 @@ public class Player {
 	
 	public WebDriver driver;
 
-	String nextButton = "//div[@class='letznav-buttons']/button[text()='Next']";
-	String button = "//div[@class='letznav-buttons']/button";
+	String nextButton = "//div[@class='product-buttons']/button[text()='Next']";
+	String button = "//div[@class='product-buttons']/button";
 	String playerButton = "//banner[@class='banner-player']";
-	String needHelp = "//letznav-frame/banner/div/span[text()='Need Help?']";
-	String playerFeedBack = "//div[@class='letznav-content']/feedback-form[text()]";
+	String needHelp = "//product-frame/banner/div/span[text()='Need Help?']";
+	String playerFeedBack = "//div[@class='product-content']/feedback-form[text()]";
 
 	public Player(WebDriver driver) {
 		this.driver = driver;
@@ -31,7 +31,7 @@ public class Player {
 		Assert.assertTrue(feedBack);
 	}
 
-	public void openLetzNavPlayer() {
+	public void openproductPlayer() {
 		driver.findElement(By.xpath(playerButton)).click();
 	}
 
