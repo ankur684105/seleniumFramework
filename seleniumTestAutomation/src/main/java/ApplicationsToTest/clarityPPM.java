@@ -29,7 +29,7 @@ public class clarityPPM {
 	public void goToPortlets() {
 //		driver.findElement(By.xpath(home)).click();
 //		driver.findElement(By.xpath(portlets)).click();
-		driver.navigate().to("http://ppmdemo.letznav.com/niku/nu#action:npt.myPortlets");
+		driver.navigate().to("http://ppmdemo.com/niku/nu#action:npt.myPortlets");
 	}
 
 }
