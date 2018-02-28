@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-public class letzNavPlayer {
+public class Player {
 	
 	public WebDriver driver;
 
@@ -20,7 +20,7 @@ public class letzNavPlayer {
 	String needHelp = "//letznav-frame/banner/div/span[text()='Need Help?']";
 	String playerFeedBack = "//div[@class='letznav-content']/feedback-form[text()]";
 
-	public letzNavPlayer(WebDriver driver) {
+	public Player(WebDriver driver) {
 		this.driver = driver;
 
 	}

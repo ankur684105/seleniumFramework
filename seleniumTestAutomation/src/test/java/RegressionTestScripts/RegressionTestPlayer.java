@@ -48,7 +48,7 @@ public class RegressionTestPlayer {
 	public String claritypwd = PropertiesReader.getValue("claritypwd");
 	ExtentReports report;
 	ExtentTest test;
-	letzNavPlayer player;
+	Player player;
 	clarityPPM clarity;
 	ExcelReader data;
 	String component = "player";
@@ -64,7 +64,7 @@ public class RegressionTestPlayer {
 		report = ExtentReports.getInstance();
 		driver = Browser.startBrowser("chrome", PropertiesReader.getValue("url"), component);
 		//player = new letzNavPlayer(driver);
-		player = new letzNavPlayer(driver);
+		player = new Player(driver);
 		clarity = new clarityPPM(driver);
 		String testDataFile = System.getProperty("user.dir") + "\\TestData\\Book1.xlsx";
 		ExcelReader.setExcelFile(testDataFile, "EmployeeData");
@@ -157,7 +157,7 @@ public class RegressionTestPlayer {
 	public void validateLauncherNavigation() {
 		try {
 			logs.debug("Test launcher navigation");
-			letzNavPlayer player = new letzNavPlayer(driver);
+			Player player = new Player(driver);
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			test.log(LogStatus.INFO, "Validate launcher navigation");
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

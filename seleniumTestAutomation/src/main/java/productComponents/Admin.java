@@ -1,5 +1,5 @@
 package productComponents;
 
-public class letzNavAdmin {
+public class Admin {
 
 }

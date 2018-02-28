@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 
-public class letzNavEditor {
+public class Editor {
 
 	public WebDriver driver;
 	String letzNavEditorButton = "//banner[@class='banner-editor']";
@@ -94,7 +94,7 @@ public class letzNavEditor {
 
 	JavascriptExecutor executor;
 
-	public letzNavEditor(WebDriver driver) {
+	public Editor(WebDriver driver) {
 		this.driver = driver;
 
 	}

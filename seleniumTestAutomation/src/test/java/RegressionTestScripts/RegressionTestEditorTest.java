@@ -23,7 +23,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import ApplicationsToTest.clarityPPM;
-import productComponents.letzNavEditor;
+import productComponents.Editor;
 import utilPackage.Browser;
 import utilPackage.ExcelReader;
 import utilPackage.ExtensionInstaller;
@@ -42,7 +42,7 @@ public class RegressionTestEditorTest {
 	public String editorPwd = PropertiesReader.getValue("editorpassword");
 	ExtentReports report;
 	ExtentTest test;
-	letzNavEditor editor;
+	Editor editor;
 	clarityPPM clarity;
 	ExcelReader data;
 	String component = "editor";
@@ -58,7 +58,7 @@ public class RegressionTestEditorTest {
 		report = ExtentReports.getInstance();
 		driver = Browser.startBrowser("chrome", PropertiesReader.getValue("url"), component);
 		// player = new letzNavPlayer(driver);
-		editor = new letzNavEditor(driver);
+		editor = new Editor(driver);
 		clarity = new clarityPPM(driver);
 		String testDataFile = System.getProperty("user.dir") + "\\TestData\\Book1.xlsx";
 		//String testDataFile = letzNavPropertiesReader.getValue("testdata");
