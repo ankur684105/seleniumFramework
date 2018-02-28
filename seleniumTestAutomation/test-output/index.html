@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\ankur.sh\AppData\Local\Temp\testng-eclipse--2036849064\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">21 methods,   21 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="editorLogin">editorLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="postWorkFlowCreation">postWorkFlowCreation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="preLauncherSetUp">preLauncherSetUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="preLauncherTest">preLauncherTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="preNavTipSetUp">preNavTipSetUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="preNavTipTest">preNavTipTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="preValidationTest">preValidationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="preWorkFlowSetUp">preWorkFlowSetUp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="preWorkFlowTest">preWorkFlowTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="validateLaunchers(//td/input[@name=&#039;portlet_code&#039;], link,  PortletCode, NameCode, https://timesofindia.indiatimes.com/)">validateLaunchers(//td/input[@name='portlet_code'], link,  PortletCode, NameCode, https://timesofindia.indiatimes.com/)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="validateLaunchers(//input[@name=&#039;portlet_description&#039;], link,  PortletCategory, NameCategory, https://timesofindia.ind...)">validateLaunchers(//input[@name='portlet_description'], link,  PortletCategory, NameCategory, https://timesofindia.ind...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="validateLaunchers(//td/input[@name=&#039;portlet_title&#039;], link,  PortletTitle, NameTitle, https://timesofindia.indiatimes.c...)">validateLaunchers(//td/input[@name='portlet_title'], link,  PortletTitle, NameTitle, https://timesofindia.indiatimes.c...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="validateNavTips(//td/input[@name=&#039;portlet_code&#039;],  Automation Code,   Test Code)">validateNavTips(//td/input[@name='portlet_code'],  Automation Code,   Test Code)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="validateNavTips(//select[@name=&#039;category&#039;],  Automation Category,   Test Category)">validateNavTips(//select[@name='category'],  Automation Category,   Test Category)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="validateNavTips(//td/input[@name=&#039;portlet_title&#039;],  Automation Title,   Test Title)">validateNavTips(//td/input[@name='portlet_title'],  Automation Title,   Test Title)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="validateValidation(//select[@name=&#039;category&#039;], 10, 20, #$%!, error 404, console.log(&#039;testAssertion&#039;);, cust err 402)">validateValidation(//select[@name='category'], 10, 20, #$%!, error 404, console.log('testAssertion');, cust err 402)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="validateValidation(//input[@name=&#039;portlet_code&#039;], 10, 20, #$%!, error 404, console.log(&#039;testAssertion&#039;);, cust err 402)">validateValidation(//input[@name='portlet_code'], 10, 20, #$%!, error 404, console.log('testAssertion');, cust err 402)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="validateValidation(//td/input[@name=&#039;portlet_code&#039;], 10, 20, #$%!, error 404, console.log(&#039;testAssertion&#039;);, cust err 4...)">validateValidation(//td/input[@name='portlet_code'], 10, 20, #$%!, error 404, console.log('testAssertion');, cust err 4...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="validateWorkFlows(//input[@name=&#039;portlet_code&#039;], Automation, clickOnElement, cornerBottomRight, false)">validateWorkFlows(//input[@name='portlet_code'], Automation, clickOnElement, cornerBottomRight, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="validateWorkFlows(//td/input[@name=&#039;portlet_title&#039;], Automation, clickOnElement, cornerBottomRight, false)">validateWorkFlows(//td/input[@name='portlet_title'], Automation, clickOnElement, cornerBottomRight, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="letzNavTestScripts.letzNavRegressionTestEditor" hash-for-method="validateWorkFlows(//h1[@class=&#039;ppm_workspace_title&#039;], Automation, clickOnElement, cornerBottomRight, false)">validateWorkFlows(//h1[@class='ppm_workspace_title'], Automation, clickOnElement, cornerBottomRight, false)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">letzNavTestScripts.letzNavRegressionTestEditor</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editorLogin">
+                  </a> <!-- editorLogin -->
+                  <span class="method-name">editorLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postWorkFlowCreation">
+                  </a> <!-- postWorkFlowCreation -->
+                  <span class="method-name">postWorkFlowCreation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="preLauncherSetUp">
+                  </a> <!-- preLauncherSetUp -->
+                  <span class="method-name">preLauncherSetUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="preLauncherTest">
+                  </a> <!-- preLauncherTest -->
+                  <span class="method-name">preLauncherTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="preNavTipSetUp">
+                  </a> <!-- preNavTipSetUp -->
+                  <span class="method-name">preNavTipSetUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="preNavTipTest">
+                  </a> <!-- preNavTipTest -->
+                  <span class="method-name">preNavTipTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="preValidationTest">
+                  </a> <!-- preValidationTest -->
+                  <span class="method-name">preValidationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="preWorkFlowSetUp">
+                  </a> <!-- preWorkFlowSetUp -->
+                  <span class="method-name">preWorkFlowSetUp</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="preWorkFlowTest">
+                  </a> <!-- preWorkFlowTest -->
+                  <span class="method-name">preWorkFlowTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLaunchers(//td/input[@name=&#039;portlet_code&#039;], link,  PortletCode, NameCode, https://timesofindia.indiatimes.com/)">
+                  </a> <!-- validateLaunchers(//td/input[@name='portlet_code'], link,  PortletCode, NameCode, https://timesofindia.indiatimes.com/) -->
+                  <span class="method-name">validateLaunchers</span>
+                  <span class="parameters">(//td/input[@name='portlet_code'], link,  PortletCode, NameCode, https://timesofindia.indiatimes.com/)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLaunchers(//input[@name=&#039;portlet_description&#039;], link,  PortletCategory, NameCategory, https://timesofindia.ind...)">
+                  </a> <!-- validateLaunchers(//input[@name='portlet_description'], link,  PortletCategory, NameCategory, https://timesofindia.ind...) -->
+                  <span class="method-name">validateLaunchers</span>
+                  <span class="parameters">(//input[@name='portlet_description'], link,  PortletCategory, NameCategory, https://timesofindia.indiatimes.com/)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateLaunchers(//td/input[@name=&#039;portlet_title&#039;], link,  PortletTitle, NameTitle, https://timesofindia.indiatimes.c...)">
+                  </a> <!-- validateLaunchers(//td/input[@name='portlet_title'], link,  PortletTitle, NameTitle, https://timesofindia.indiatimes.c...) -->
+                  <span class="method-name">validateLaunchers</span>
+                  <span class="parameters">(//td/input[@name='portlet_title'], link,  PortletTitle, NameTitle, https://timesofindia.indiatimes.com/)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNavTips(//td/input[@name=&#039;portlet_code&#039;],  Automation Code,   Test Code)">
+                  </a> <!-- validateNavTips(//td/input[@name='portlet_code'],  Automation Code,   Test Code) -->
+                  <span class="method-name">validateNavTips</span>
+                  <span class="parameters">(//td/input[@name='portlet_code'],  Automation Code,   Test Code)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNavTips(//select[@name=&#039;category&#039;],  Automation Category,   Test Category)">
+                  </a> <!-- validateNavTips(//select[@name='category'],  Automation Category,   Test Category) -->
+                  <span class="method-name">validateNavTips</span>
+                  <span class="parameters">(//select[@name='category'],  Automation Category,   Test Category)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateNavTips(//td/input[@name=&#039;portlet_title&#039;],  Automation Title,   Test Title)">
+                  </a> <!-- validateNavTips(//td/input[@name='portlet_title'],  Automation Title,   Test Title) -->
+                  <span class="method-name">validateNavTips</span>
+                  <span class="parameters">(//td/input[@name='portlet_title'],  Automation Title,   Test Title)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateValidation(//select[@name=&#039;category&#039;], 10, 20, #$%!, error 404, console.log(&#039;testAssertion&#039;);, cust err 402)">
+                  </a> <!-- validateValidation(//select[@name='category'], 10, 20, #$%!, error 404, console.log('testAssertion');, cust err 402) -->
+                  <span class="method-name">validateValidation</span>
+                  <span class="parameters">(//select[@name='category'], 10, 20, #$%!, error 404, console.log('testAssertion');, cust err 402)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateValidation(//input[@name=&#039;portlet_code&#039;], 10, 20, #$%!, error 404, console.log(&#039;testAssertion&#039;);, cust err 402)">
+                  </a> <!-- validateValidation(//input[@name='portlet_code'], 10, 20, #$%!, error 404, console.log('testAssertion');, cust err 402) -->
+                  <span class="method-name">validateValidation</span>
+                  <span class="parameters">(//input[@name='portlet_code'], 10, 20, #$%!, error 404, console.log('testAssertion');, cust err 402)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateValidation(//td/input[@name=&#039;portlet_code&#039;], 10, 20, #$%!, error 404, console.log(&#039;testAssertion&#039;);, cust err 4...)">
+                  </a> <!-- validateValidation(//td/input[@name='portlet_code'], 10, 20, #$%!, error 404, console.log('testAssertion');, cust err 4...) -->
+                  <span class="method-name">validateValidation</span>
+                  <span class="parameters">(//td/input[@name='portlet_code'], 10, 20, #$%!, error 404, console.log('testAssertion');, cust err 402)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateWorkFlows(//input[@name=&#039;portlet_code&#039;], Automation, clickOnElement, cornerBottomRight, false)">
+                  </a> <!-- validateWorkFlows(//input[@name='portlet_code'], Automation, clickOnElement, cornerBottomRight, false) -->
+                  <span class="method-name">validateWorkFlows</span>
+                  <span class="parameters">(//input[@name='portlet_code'], Automation, clickOnElement, cornerBottomRight, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateWorkFlows(//td/input[@name=&#039;portlet_title&#039;], Automation, clickOnElement, cornerBottomRight, false)">
+                  </a> <!-- validateWorkFlows(//td/input[@name='portlet_title'], Automation, clickOnElement, cornerBottomRight, false) -->
+                  <span class="method-name">validateWorkFlows</span>
+                  <span class="parameters">(//td/input[@name='portlet_title'], Automation, clickOnElement, cornerBottomRight, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateWorkFlows(//h1[@class=&#039;ppm_workspace_title&#039;], Automation, clickOnElement, cornerBottomRight, false)">
+                  </a> <!-- validateWorkFlows(//h1[@class='ppm_workspace_title'], Automation, clickOnElement, cornerBottomRight, false) -->
+                  <span class="method-name">validateWorkFlows</span>
+                  <span class="parameters">(//h1[@class='ppm_workspace_title'], Automation, clickOnElement, cornerBottomRight, false)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\ankur.sh\AppData\Local\Temp\testng-eclipse--2036849064\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;-1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;letzNavTestScripts.letzNavRegressionTestEditor&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(21);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validateWorkFlows')
+data.setCell(0, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(0, 3, 10924);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateWorkFlows')
+data.setCell(1, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(1, 3, 10418);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateWorkFlows')
+data.setCell(2, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(2, 3, 10395);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'editorLogin')
+data.setCell(3, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(3, 3, 7225);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateValidation')
+data.setCell(4, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(4, 3, 5817);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateValidation')
+data.setCell(5, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(5, 3, 3831);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'preWorkFlowTest')
+data.setCell(6, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(6, 3, 3520);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateValidation')
+data.setCell(7, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(7, 3, 3502);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateLaunchers')
+data.setCell(8, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(8, 3, 3403);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'validateNavTips')
+data.setCell(9, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(9, 3, 3122);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'validateLaunchers')
+data.setCell(10, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(10, 3, 2795);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'preValidationTest')
+data.setCell(11, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(11, 3, 2729);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'validateNavTips')
+data.setCell(12, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(12, 3, 2661);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validateLaunchers')
+data.setCell(13, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(13, 3, 2615);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validateNavTips')
+data.setCell(14, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(14, 3, 2157);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'preLauncherSetUp')
+data.setCell(15, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(15, 3, 867);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'preWorkFlowSetUp')
+data.setCell(16, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(16, 3, 830);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'postWorkFlowCreation')
+data.setCell(17, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(17, 3, 666);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'preNavTipSetUp')
+data.setCell(18, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(18, 3, 599);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'preLauncherTest')
+data.setCell(19, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(19, 3, 531);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'preNavTipTest')
+data.setCell(20, 2, 'letzNavTestScripts.letzNavRegressionTestEditor')
+data.setCell(20, 3, 513);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">letzNavTestScripts.letzNavRegressionTestEditor</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">openBrowserAndInstallExtensions</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">37115 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">editorLogin</span>
+                <span class="method-start">37116 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=editorLogin status=SUCCESS method=letzNavRegressionTestEditor.editorLogin()[pri:1, ...)</span>
+                <span class="method-start">44343 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">44815 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">preValidationTest</span>
+                <span class="method-start">44816 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=preValidationTest status=SUCCESS method=letzNavRegressionTestEditor.preValidationTe...)</span>
+                <span class="method-start">47546 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">47695 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateValidation(//input[@name='portlet_code'], 10, 20, #$%!, error 404, console.log('testAssertion');, cust err 402)</span>
+                <span class="method-start">47696 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateValidation status=SUCCESS method=letzNavRegressionTestEditor.validateValida...)</span>
+                <span class="method-start">53514 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">53555 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateValidation(//select[@name='category'], 10, 20, #$%!, error 404, console.log('testAssertion');, cust err 402)</span>
+                <span class="method-start">53556 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateValidation status=SUCCESS method=letzNavRegressionTestEditor.validateValida...)</span>
+                <span class="method-start">57388 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">57427 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateValidation(//td/input[@name='portlet_code'], 10, 20, #$%!, error 404, console.log('testAssertion');, cust err 4...)</span>
+                <span class="method-start">57428 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateValidation status=SUCCESS method=letzNavRegressionTestEditor.validateValida...)</span>
+                <span class="method-start">60931 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">60970 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">preNavTipSetUp</span>
+                <span class="method-start">60971 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=preNavTipSetUp status=SUCCESS method=letzNavRegressionTestEditor.preNavTipSetUp()[p...)</span>
+                <span class="method-start">61571 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">61598 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">preNavTipTest</span>
+                <span class="method-start">61599 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=preNavTipTest status=SUCCESS method=letzNavRegressionTestEditor.preNavTipTest()[pri...)</span>
+                <span class="method-start">62112 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">62155 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateNavTips(//td/input[@name='portlet_title'],  Automation Title,   Test Title)</span>
+                <span class="method-start">62156 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateNavTips status=SUCCESS method=letzNavRegressionTestEditor.validateNavTips(j...)</span>
+                <span class="method-start">65279 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">65303 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateNavTips(//td/input[@name='portlet_code'],  Automation Code,   Test Code)</span>
+                <span class="method-start">65303 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateNavTips status=SUCCESS method=letzNavRegressionTestEditor.validateNavTips(j...)</span>
+                <span class="method-start">67461 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">67482 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateNavTips(//select[@name='category'],  Automation Category,   Test Category)</span>
+                <span class="method-start">67483 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateNavTips status=SUCCESS method=letzNavRegressionTestEditor.validateNavTips(j...)</span>
+                <span class="method-start">70144 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">70170 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">preLauncherSetUp</span>
+                <span class="method-start">70171 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=preLauncherSetUp status=SUCCESS method=letzNavRegressionTestEditor.preLauncherSetUp...)</span>
+                <span class="method-start">71038 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">71061 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">preLauncherTest</span>
+                <span class="method-start">71061 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=preLauncherTest status=SUCCESS method=letzNavRegressionTestEditor.preLauncherTest()...)</span>
+                <span class="method-start">71593 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">71621 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLaunchers(//td/input[@name='portlet_title'], link,  PortletTitle, NameTitle, https://timesofindia.indiatimes.c...)</span>
+                <span class="method-start">71621 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateLaunchers status=SUCCESS method=letzNavRegressionTestEditor.validateLaunche...)</span>
+                <span class="method-start">75025 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">75052 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLaunchers(//td/input[@name='portlet_code'], link,  PortletCode, NameCode, https://timesofindia.indiatimes.com/)</span>
+                <span class="method-start">75053 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateLaunchers status=SUCCESS method=letzNavRegressionTestEditor.validateLaunche...)</span>
+                <span class="method-start">77849 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">77879 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateLaunchers(//input[@name='portlet_description'], link,  PortletCategory, NameCategory, https://timesofindia.ind...)</span>
+                <span class="method-start">77879 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateLaunchers status=SUCCESS method=letzNavRegressionTestEditor.validateLaunche...)</span>
+                <span class="method-start">80495 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">80525 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">preWorkFlowSetUp</span>
+                <span class="method-start">80526 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=preWorkFlowSetUp status=SUCCESS method=letzNavRegressionTestEditor.preWorkFlowSetUp...)</span>
+                <span class="method-start">81357 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">81395 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">preWorkFlowTest</span>
+                <span class="method-start">81396 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=preWorkFlowTest status=SUCCESS method=letzNavRegressionTestEditor.preWorkFlowTest()...)</span>
+                <span class="method-start">84917 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">84957 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateWorkFlows(//input[@name='portlet_code'], Automation, clickOnElement, cornerBottomRight, false)</span>
+                <span class="method-start">84958 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateWorkFlows status=SUCCESS method=letzNavRegressionTestEditor.validateWorkFlo...)</span>
+                <span class="method-start">95377 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">95403 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateWorkFlows(//td/input[@name='portlet_title'], Automation, clickOnElement, cornerBottomRight, false)</span>
+                <span class="method-start">95403 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateWorkFlows status=SUCCESS method=letzNavRegressionTestEditor.validateWorkFlo...)</span>
+                <span class="method-start">106332 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">106384 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateWorkFlows(//h1[@class='ppm_workspace_title'], Automation, clickOnElement, cornerBottomRight, false)</span>
+                <span class="method-start">106384 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=validateWorkFlows status=SUCCESS method=letzNavRegressionTestEditor.validateWorkFlo...)</span>
+                <span class="method-start">116780 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">116823 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">postWorkFlowCreation</span>
+                <span class="method-start">116823 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=postWorkFlowCreation status=SUCCESS method=letzNavRegressionTestEditor.postWorkFlow...)</span>
+                <span class="method-start">117490 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">117519 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
