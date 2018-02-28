@@ -1,4 +1,4 @@
-package letzNavTestFrameWork.letzNavTestScripts;
+package RegressionTestScripts;
 
 import java.io.File;
 import java.io.IOException;
