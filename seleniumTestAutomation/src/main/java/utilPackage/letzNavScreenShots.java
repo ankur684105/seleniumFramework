@@ -13,7 +13,7 @@ public class letzNavScreenShots {
 
 		fileName = fileName + ".png";
 		String directory = System.getProperty("user.dir") + "//Reports//ScreenShots//";
-		//String directory =  letzNavPropertiesReader.getValue("screenshots");
+
 		File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(sourceFile, new File(directory + fileName));
 		String destination = directory + fileName;
